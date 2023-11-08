@@ -11,8 +11,8 @@ export default function Characters({ data }) {
                     const  source = getImgSrc(character.name);
 
                     return (
-                        <Link href={`/details/${i + 1}`} className='hover:outline hover:outline-1 hover:outline-yellow-300'>
-                            <Character key={character.name} character={character} source={source} imageSize={`w-[300px] h-[300px]`} />
+                        <Link href={`/details/${i + 1}`} key={character.name} className='hover:outline hover:outline-1 hover:outline-yellow-300'>
+                            <Character character={character} source={source} imageSize={`w-[300px] h-[300px]`} />
                         </Link>
                     );
                 })
