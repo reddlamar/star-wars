@@ -15,7 +15,7 @@ export default function Page({ params }) {
     return (
         <main className='flex justify-center'>
             <div>
-                { imgSrc && <Image source={imgSrc} size={'w-[500px] h-[500px]'} alt={data.name}/> }
+                { imgSrc && <Image source={imgSrc} size={'w-[500px] h-[500px]'} alt={data?.name}/> }
                 <div className='text-yellow-300'>
                     Character Name: {data?.name}
                     <br />
